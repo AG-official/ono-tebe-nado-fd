@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 100px 50px;
+    padding: 92px 50px 96px 50px /*значения подобраны эмпирически из PixelPerfect*/
 }
 
 .header__menu {
@@ -11,7 +11,9 @@
 
 .header__links-list {
     display: flex;
-    gap: 1.5em;
+    gap: 1.65em; /*работаем в основном со шрифтами и отступами, поэтому использовал em*/
+    font-size: 1.15em;
+    text-underline-offset: 0.15em;
 }
 
 .header__links-list-item {
@@ -31,12 +33,22 @@
 }
 
 .header__logo {
+    display: flex; 
+
+}
+
+.header__logo-image {
     display: flex;
-    min-width: 148px;
-    min-height: 105px;
+    min-width: 137px; /*значение подобрано эмпирически из PixelPerfect*/
 }
 
 .address {
+    
+    font-size: 1.15em;
+    font-style: normal;
+    line-height: 1.35em;
+    text-underline-offset: 0.25em;
+    letter-spacing: -0.01em; /*добавлено для подгонки с PixelPerfect*/
 
 }
 
@@ -45,39 +57,53 @@
     flex-direction: column;
     justify-self: end;
     align-items: flex-start;
-    max-width: 210px
+    max-width: 240px /*значение подобрано эмпирически из PixelPerfect*/
 }
 
 .cover {
     display: grid;
-    position: relative;
-    min-height: 757px;
+    min-height: 757px; /*значение взято из проекта*/
     background-image: url(../images/cover.jpg);
-}
-
-.cover__title {
-    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .overlay {
     background-color: rgb(0 0 0 / 0.6)
 }
 
+.cover__title {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr)
+}
+
 .aligned-text {
     display: block;
+    text-transform: uppercase;
+    font-size: 4em;
     color: rgb(255 255 255);
 }
 
-.aligned-text_left {}
+.aligned-text_left {
+    justify-self: left;
+}
 
-.aligned-text_center {}
+.aligned-text_center {
+    justify-self: center;
+}
 
-.aligned-text_right {}
+.aligned-text_right {
+    justify-self: right;
+}
 
-.cover__description {}
+.cover__description {
+    display: flex;
+}
 
 .cover__description-text {
     text-transform: uppercase;
+    color: rgb(255 255 255);
 }
 
 .bet-button {
