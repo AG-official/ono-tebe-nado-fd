@@ -2,20 +2,18 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 95px; /*значения подобраны эмпирически из PixelPerfect*/
+    padding: 91px 50px 97px;
     font-size: 18px;
-}
-
-.header__menu {
-
 }
 
 .header__links-list {
     display: flex;
-    gap: 33px;
+    gap: 27px;
 }
 
 .header__links-list-item {
+    padding-left: 6px;
+    font-size: 18px;
     list-style: circle;
 }
 
@@ -24,8 +22,8 @@
 }
 
 .header__link {
-    text-transform: lowercase;
     text-underline-offset: 4px;
+    text-transform: lowercase;
 }
 
 .header__link_active {
@@ -39,10 +37,10 @@
 }
 
 .header__logo-image {
+    justify-self: center;
+    align-self: center;
     width: 137px;
     height: auto;
-    align-self: center;
-    justify-self: center;
 }
 
 .address {
@@ -60,35 +58,35 @@
 }
 
 .cover {
-    display: grid;
     position: relative;
-    padding: 50px;
+    display: grid;
     min-height: 757px;
+    padding: 50px;
     background: url(../images/cover.jpg) no-repeat center / cover;
 }
 
 .overlay {
     position: absolute;
+    z-index: 1;
     width: 100%;
     height: 100%;
-    z-index: 1;
     background-color: rgb(0 0 0 / 0.6);
 }
 
 .cover__title {
+    z-index: 2;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    padding: 115px 0 20px;
-    z-index: 2;
-
+    padding: 114px 0 20px;
 }
 
 .aligned-text {
     display: flex;
-    font-size: 98px;
-    letter-spacing: 32px;
-    text-transform: uppercase;
     color: rgb(255 255 255);
+    font-size: 100px;
+    line-height: 115px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
 }
 
 .aligned-text_left {
@@ -108,40 +106,40 @@
 }
 
 .cover__description {
+    z-index: 2;
     display: flex;
     gap: 106px;
-    z-index: 2;
 }
 
 .cover__description-text {
-    padding-bottom: 12px;
     align-self: flex-end;
-    text-transform: uppercase;
-    font-size: 22px;
-    word-spacing: 18.5px;
+    padding-bottom: 12px;
     color: rgb(255 255 255);
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 18.5px;
 }
 
 .bet-button {
-    padding: 12px 32px;
     align-self: flex-end;
-    text-transform: uppercase;
-    font-size: 22px;
-    color: rgb(255 255 255);
-    background-color: transparent;
     border: 1px solid rgb(255 255 255);
+    padding: 12px 32px;
+    color: rgb(255 255 255);
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: transparent;
 }
 
 .lots {
-    padding: 180px 24px 0;
     display: flex;
     flex-direction: column;
-    gap: 27px;   
+    gap: 27px;
+    padding: 180px 24px 0;   
 }
 
 .lots__heading {
-    padding: 0 40px;
     display: grid;
+    padding: 0 40px;
     font-size: 40px;
     text-transform: uppercase;
 }
@@ -156,33 +154,33 @@
 
 .lots__card-list-item {
     position: relative;
-    line-height: 24px; /*что это и почему именно здесь?*/
 }
 
 .card {
-    padding: 48px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 334px;
     min-height: 596px;
+    padding: 48px 40px;
     background: no-repeat center / cover;
 }
 
 .card__title {
-    text-transform: uppercase;
+    z-index: 2;
+    color: rgb(255 255 255);
+    font-size: 22px;
+    line-height: 26px;
     text-decoration: underline;
     text-underline-offset: 4px;
-    line-height: 26px;
-    font-size: 22px;
-    color: rgb(255 255 255);
-    z-index: 2;
+    text-transform: uppercase;
 }
 
 .card__text {
-    font-size: 20px;
-    color: rgb(255 255 255);
     z-index: 2;
+    color: rgb(255 255 255);
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .card-link {
@@ -202,8 +200,8 @@
 }
 
 .lots__look-more-link {
-    font-size: 20px;
     padding: 3px 40px;
+    font-size: 20px;
     text-underline-offset: 5px;
 }
 
@@ -214,8 +212,8 @@
 .about__column {
     display: grid;
     grid-template-columns: 334px auto;
-    gap: 25px;
     justify-items: center;
+    gap: 25px;
 }
 
 .about__logo {
@@ -224,8 +222,8 @@
     align-items: center;
     width: 240px;
     height: 240px;
-    background-color: rgb(0 0 0);
     border-radius: 50%;
+    background-color: rgb(0 0 0);
 }
 
 .about__logo-image {
@@ -234,31 +232,30 @@
 }
 
 .about__content {
-    padding-top: 101px;
     display: grid;
     gap: 100px;
+    padding-top: 101px;
 }
 
 .about__title {
-    text-transform: uppercase;
+    color: rgb(0 0 0);
     font-size: 27px;
     letter-spacing: -0.3px;
-    color: rgb(0 0 0);
+    text-transform: uppercase;
 }
 
 .about__text {
-    padding-right: 3px;
     display: grid;
     gap: 25px;
+    padding-right: 3px;
     font-size: 20px;
     line-height: 24px;
-    white-space: pre-wrap; /*Вообще я бы сделал break-spaces и без padding-left, но другого способа попасть в PixelPerfect не нашел */
 }
 
 .footer {
-    padding: 29px 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 29px 50px;
 }
 
 .footer__address {
@@ -271,28 +268,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .footer__menu-links-list {
     display: grid;
-    align-items: center;
-    gap: 3px;
-    list-style: none;
+    font-size: 18px;
+    text-align: center;
 }
 
 .footer__menu-links-list-item {
-    
-
-}
-
-.footer__menu-list-item_no-bullit {
     list-style: none;
 }
 
 .footer__menu-link {
-    text-transform: lowercase;
     text-underline-offset: 4px;
+    text-transform: lowercase;
 }
 
 .footer__menu-link_active {
@@ -310,5 +300,4 @@
 }
 .footer__social-icon {
     width: 48px;
-
 }
