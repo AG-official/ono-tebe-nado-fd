@@ -46,7 +46,7 @@
 .address {
     font-size: 18px;
     font-style: normal;
-    line-height: 24px;
+    line-height: 1.35em;
     text-underline-offset: 5px;
 }
 
@@ -77,14 +77,14 @@
     z-index: 2;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    padding: 114px 0 20px;
+    padding: 116px 0 20px;
 }
 
 .aligned-text {
     display: flex;
     color: rgb(255 255 255);
     font-size: 100px;
-    line-height: 115px;
+    line-height: 1.13em;
     letter-spacing: 30px;
     text-transform: uppercase;
 }
@@ -170,7 +170,7 @@
     z-index: 2;
     color: rgb(255 255 255);
     font-size: 22px;
-    line-height: 26px;
+    line-height: 1.18em;
     text-decoration: underline;
     text-underline-offset: 4px;
     text-transform: uppercase;
@@ -180,7 +180,7 @@
     z-index: 2;
     color: rgb(255 255 255);
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.20em;
 }
 
 .card-link {
@@ -249,13 +249,13 @@
     gap: 25px;
     padding-right: 3px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.19em;
 }
 
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 29px 50px;
+    padding: 30px 50px;
 }
 
 .footer__address {
